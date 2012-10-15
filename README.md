@@ -33,7 +33,7 @@ ih 60
 1
 1 62
 
-When the input is any word (a number or set of letters) and a number separated by space, that signals syncing
+2. When the input is any word (a number or set of letters) and a number separated by space, that signals syncing
 eg:
 02817a-mapte:Ticketfly mapte$ telnet localhost 4567
 Connected to localhost.
