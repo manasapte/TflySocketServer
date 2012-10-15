@@ -49,5 +49,5 @@ ih 79
 there
 ereht 80
 
-2. the character '.' signals end of session from the client, the connection will be closed by the server.
+3. the character '.' signals end of session from the client, the connection will be closed by the server.
 
