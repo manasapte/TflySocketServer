@@ -71,16 +71,19 @@ public class ServerThread extends Thread
 				}
 				String[] tokens = str.split(" ");
 				int num = 0; boolean overrideSequence = false;
-				String lastToken = tokens[tokens.length-1];				
-				try
+				if(tokens.length > 1)
 				{
-					num = Integer.parseInt(lastToken);
-					str = str.substring(0, str.lastIndexOf(' '));
-					overrideSequence = true;
-				}
-				catch(NumberFormatException e)
-				{
-					// Do nothing
+					String lastToken = tokens[tokens.length-1];				
+					try
+					{
+						num = Integer.parseInt(lastToken);
+						str = str.substring(0, str.lastIndexOf(' '));
+						overrideSequence = true;
+					}
+					catch(NumberFormatException e)
+					{
+						// Do nothing
+					}
 				}
 				int count =0; boolean success = false;
 				while(count < this.retryCount && !success)
